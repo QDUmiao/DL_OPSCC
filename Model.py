@@ -126,8 +126,6 @@ class SurvivalImageDataset(Dataset):
         if self.time_std == 0:   
             self.time_std = 1.0  
         
-        print(f"生存时间标准化: 均值={self.time_mean:.2f}, 标准差={self.time_std:.2f}") 
-        
     def __len__(self):  
         return len(self.valid_indices)  
     
